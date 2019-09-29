@@ -1,7 +1,12 @@
 class Foo {
-    constructor() {
-        console.log('Foo constructor');
-    }
+  constructor () {
+    console.log('Foo constructor')
+  }
+
+  init () {
+    console.log('init')
+  }
 }
 
-new Foo();
+const foo = new Foo()
+foo.init()

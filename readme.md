@@ -8,7 +8,6 @@
 - PhpStorm IDE helper for tlint https://plugins.jetbrains.com/plugin/10703-tlint (Alpha with errors)
 -  [PHP linter - TLINT](https://github.com/tightenco/tlint)
 
-
 ## Setup
 - `./setup.sh`
 
@@ -16,10 +15,9 @@
 - `npm run dev`
 - `php artisan serve`
 
-
 ## Todo
-~~* php linter~~
-* es linter
-* themes
-* api simple stub
-* commit prevent hook
+- ~~php linter~~
+- es linter
+- ~~themes~~
+- api simple stub
+- ~~commit hook~~
