@@ -15,5 +15,6 @@ use YAAP\Theme\Facades\Theme;
 
 Route::get('/', function () {
     Theme::init('default');
+
     return view('hello');
 });
