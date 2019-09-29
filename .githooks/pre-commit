@@ -20,13 +20,21 @@ if [[ "$STAGED_FILES" = "" ]]; then
 fi
 
 
-$TLINT lint  "${STAGED_FILES[@]}"
+PASS=true
 
-#echo "$?"
+for FILE in $STAGED_FILES
+do
+  $TLINT lint "$FILE"
 
-TLINT_EXIT="$?"
+  if [[ "$?" == 0 ]]; then
+    printf "\t\033[32mTLint Passed: $FILE\033[0m"
+  else
+    printf "\t\033[41mTLint Failed: $FILE\033[0m"
+    PASS=false
+  fi
+done
 
-if [[ "${TLINT_EXIT}" == 0 ]]; then
+if [[ "${PASS}" == true ]]; then
   printf "\n\033[42m\033[30mCOMMIT SUCCEEDED\033[0m\n"
 else
   printf "\n\033[41m\033[30mCOMMIT FAILED:\033[0m Fix tlint errors and try again\n"

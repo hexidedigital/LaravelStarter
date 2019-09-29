@@ -11,6 +11,9 @@
 |
 */
 
+use YAAP\Theme\Facades\Theme;
+
 Route::get('/', function () {
-    return view('welcome');
+    Theme::init('default');
+    return view('hello');
 });

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "65b2d416739a4a3c02cf434cc80b947f",
+    "content-hash": "28ff76fdc3647df4636a6383de2aac0c",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2893,16 +2893,16 @@
         },
         {
             "name": "yaap/theme",
-            "version": "3.0.1",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yaapis/Theme.git",
-                "reference": "b79e2eaab1d76741f1bc2afff3500e99612d7454"
+                "reference": "646253815ed7a78ef82fe6fc468bb14ca456b6c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yaapis/Theme/zipball/b79e2eaab1d76741f1bc2afff3500e99612d7454",
-                "reference": "b79e2eaab1d76741f1bc2afff3500e99612d7454",
+                "url": "https://api.github.com/repos/yaapis/Theme/zipball/646253815ed7a78ef82fe6fc468bb14ca456b6c1",
+                "reference": "646253815ed7a78ef82fe6fc468bb14ca456b6c1",
                 "shasum": ""
             },
             "require": {
@@ -2943,7 +2943,7 @@
                 "layout",
                 "theme"
             ],
-            "time": "2019-09-16T08:02:37+00:00"
+            "time": "2019-09-29T22:05:33+00:00"
         }
     ],
     "packages-dev": [
@@ -4976,7 +4976,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yaap/theme": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
