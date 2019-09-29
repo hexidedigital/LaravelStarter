@@ -24,7 +24,9 @@ PASS=true
 
 for FILE in $STAGED_FILES
 do
+  echo $FILE
   $TLINT lint "$FILE"
+  echo "$?"
 
   if [[ "$?" == 0 ]]; then
     printf "\t\033[32mTLint Passed: $FILE\033[0m"
@@ -33,6 +35,8 @@ do
     PASS=false
   fi
 done
+
+echo "${PASS}"
 
 if [[ "${PASS}" == true ]]; then
   printf "\n\t\033[42m\033[30mCOMMIT SUCCEEDED\033[0m\n"
