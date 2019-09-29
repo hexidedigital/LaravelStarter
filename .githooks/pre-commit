@@ -1,0 +1,37 @@
+#!/bin/bash
+
+cd "$(git rev-parse --show-toplevel)"
+TLINT="vendor/bin/tlint"
+pwd
+
+printf "\nValidating PHP files:\n"
+
+if [[ ! -x "$TLINT" ]]; then
+  printf "\033[41m\033[30mPlease install tlint\033[0m (composer install)\n"
+  exit 1
+fi
+
+
+STAGED_FILES=($(git diff --cached --name-only --diff-filter=ACM | grep ".php\{0,1\}$"))
+echo "TLint'ing ${#STAGED_FILES[@]} files"
+
+if [[ "$STAGED_FILES" = "" ]]; then
+  exit 0
+fi
+
+
+$TLINT lint  "${STAGED_FILES[@]}"
+
+#echo "$?"
+
+TLINT_EXIT="$?"
+
+if [[ "${TLINT_EXIT}" == 0 ]]; then
+  printf "\n\033[42m\033[30mCOMMIT SUCCEEDED\033[0m\n"
+else
+  printf "\n\033[41m\033[30mCOMMIT FAILED:\033[0m Fix tlint errors and try again\n"
+  exit 1
+fi
+
+exit $?
+
