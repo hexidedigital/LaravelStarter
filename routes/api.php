@@ -16,3 +16,19 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// mocked route for api
+
+Route::get('mock/{folder1}/{folder2?}/{folder3?}/{folder4?}', function (Request $request, $path) {
+    $list = func_get_args();
+    array_shift($list);
+
+    $path = public_path('api/' . implode('/', $list));
+
+    if ( ! file_exists($path)) {
+        abort(404);
+    }
+
+    return file_get_contents($path);
+});

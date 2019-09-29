@@ -15,9 +15,19 @@
 - `npm run dev`
 - `php artisan serve`
 
+## API mock
+
+In order to mock your API requests put any json files inside the public/api directory.
+
+`http://localhost:8000/api/mock/users/1.json`
+`http://localhost:8000/api/mock/settings.json`
+
+
+
 ## Todo
 - ~~php linter~~
-- es linter
+- ~~es linter~~
 - ~~themes~~
-- api simple stub
+- api stub
 - ~~commit hook~~
+- sass linter?
