@@ -1,4 +1,5 @@
 ## Components
+* PhpStorm IDE helper for tlint https://plugins.jetbrains.com/plugin/10703-tlint
 
 ## Setup
 
