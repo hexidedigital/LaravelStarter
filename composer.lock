@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f11edd2fb4d0fd2ede5e2eb2bb46f786",
+    "content-hash": "65b2d416739a4a3c02cf434cc80b947f",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2788,49 +2788,6 @@
             "time": "2019-08-26T08:26:39+00:00"
         },
         {
-            "name": "tightenco/tlint",
-            "version": "3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tightenco/tlint.git",
-                "reference": "c2924976938f5e4e4ee597c28d8ae877991af2de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/tlint/zipball/c2924976938f5e4e4ee597c28d8ae877991af2de",
-                "reference": "c2924976938f5e4e4ee597c28d8ae877991af2de",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/view": "^6.0",
-                "nikic/php-parser": "^4.2",
-                "php": ">=7.2",
-                "symfony/console": "^4.3",
-                "symfony/process": "^4.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.4"
-            },
-            "bin": [
-                "bin/tlint"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tighten\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Tighten linter for Laravel conventions",
-            "time": "2019-09-20T17:17:14+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.1",
             "source": {
@@ -2933,6 +2890,60 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "yaap/theme",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yaapis/Theme.git",
+                "reference": "b79e2eaab1d76741f1bc2afff3500e99612d7454"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yaapis/Theme/zipball/b79e2eaab1d76741f1bc2afff3500e99612d7454",
+                "reference": "b79e2eaab1d76741f1bc2afff3500e99612d7454",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0",
+                "laravel/framework": "^6.0",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "YAAP\\Theme\\ThemeServiceProvider"
+                    ],
+                    "aliases": {
+                        "Theme": "YAAP\\Theme\\Facades\\Theme"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "YAAP\\Theme": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Biluk Andrey",
+                    "email": "yaapis@gmail.com"
+                }
+            ],
+            "description": "Theme support for Laravel 4/5/6 with assets, theme extends etc.",
+            "keywords": [
+                "asset",
+                "laravel",
+                "layout",
+                "theme"
+            ],
+            "time": "2019-09-16T08:02:37+00:00"
         }
     ],
     "packages-dev": [
@@ -4868,6 +4879,49 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "time": "2019-06-13T22:48:21+00:00"
+        },
+        {
+            "name": "tightenco/tlint",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tightenco/tlint.git",
+                "reference": "c2924976938f5e4e4ee597c28d8ae877991af2de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tightenco/tlint/zipball/c2924976938f5e4e4ee597c28d8ae877991af2de",
+                "reference": "c2924976938f5e4e4ee597c28d8ae877991af2de",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/view": "^6.0",
+                "nikic/php-parser": "^4.2",
+                "php": ">=7.2",
+                "symfony/console": "^4.3",
+                "symfony/process": "^4.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.4"
+            },
+            "bin": [
+                "bin/tlint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tighten\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Tighten linter for Laravel conventions",
+            "time": "2019-09-20T17:17:14+00:00"
         },
         {
             "name": "webmozart/assert",

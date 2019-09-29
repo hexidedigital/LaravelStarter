@@ -10,7 +10,12 @@
 
 
 ## Setup
-- `./setup`
+- `./setup.sh`
+
+## Dev process
+- `npm run dev`
+- `php artisan serve`
+
 
 ## Todo
 ~~* php linter~~
