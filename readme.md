@@ -10,6 +10,7 @@
 
 
 ## Setup
+- `./setup`
 
 ## Todo
 ~~* php linter~~
