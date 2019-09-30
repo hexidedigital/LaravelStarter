@@ -6,14 +6,24 @@
 
 ## Components
 - PhpStorm IDE helper for tlint https://plugins.jetbrains.com/plugin/10703-tlint (Alpha with errors)
--  [PHP linter - TLINT](https://github.com/tightenco/tlint)
+- [PHP linter - TLINT](https://github.com/tightenco/tlint)
+- [JS linter - ESLINT](https://eslint.org)
+- [YAAP/Theme](https://packagist.org/packages/yaap/theme)
+
+## Before start
+- [Blade templates](https://laravel.com/docs/6.x/blade)
+- [Laravel Assets](https://laravel.com/docs/6.x/mix)
 
 ## Setup
 - `./setup.sh`
 
 ## Dev process
-- `npm run dev`
+- `npm run watch`
 - `php artisan serve`
+
+
+## Build assets for production
+`npm run production`
 
 ## API mock
 
